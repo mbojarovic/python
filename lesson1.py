@@ -31,16 +31,19 @@ def shortestDistance(x1, y1, x2, y2):
 # 1 -> x > 0, y > 0
 
 def func(number):
-    if type(number) != str:
-        if 4 >= number > 0:
-            if 1:
-                print("Точка в I четверти x > 0 and y > 0")
-            elif 2:
-                print("Точка во II четверти x < 0 and y > 0")
-            elif 3:
-                print("Точка в III четверти x < 0 and y < 0")
-            elif 4:
-                print("Точка в IV четверти x > 0 and y < 0")
+    if type(number) != str and 4 >= number > 0:
+        if 1:
+            print("Точка в I четверти x > 0 and y > 0")
+        elif 2:
+            print("Точка во II четверти x < 0 and y > 0")
+        elif 3:
+            print("Точка в III четверти x < 0 and y < 0")
+        elif 4:
+            print("Точка в IV четверти x > 0 and y < 0")
     else:
         print('всего 4 четверти оси координат')
+
+# Задача 4. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+# 5 -> 2, 4
+# 8 -> 2, 4, 6, 8
 
