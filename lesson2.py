@@ -12,11 +12,14 @@ def fact(n):
 
 
 # Задача 2. Выведите таблицу истинности для выражения ¬(X ∧ Y) ∨ Z.
-
-
+def func2():
+    print(f"x y z ¬(X ∧ Y) ∨ Z")
+    for x in range(0, 2):
+        for y in range(0, 2):
+            for z in range(0, 2):
+                print(f"{x} {y} {z}  {int((not x and y) or z)}")
 # Задача 3. Даны две строки. Посчитайте сколько раз каждый символ первой строки встречается во второй
 # «one» «onetwonine» - o – 2, n – 3, e – 2
-
 
 def func(first, second):
     for i in first:
@@ -24,6 +27,8 @@ def func(first, second):
             res = second.count(i)
             print(f"{i} - {res}", end=" ")
 # func("one", "onetwonine")
+
+func2()
 
 
 
