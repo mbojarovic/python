@@ -18,6 +18,8 @@ def func2():
         for y in range(0, 2):
             for z in range(0, 2):
                 print(f"{x} {y} {z}  {int((not x and y) or z)}")
+
+
 # Задача 3. Даны две строки. Посчитайте сколько раз каждый символ первой строки встречается во второй
 # «one» «onetwonine» - o – 2, n – 3, e – 2
 
@@ -26,10 +28,20 @@ def func(first, second):
         if i in second:
             res = second.count(i)
             print(f"{i} - {res}", end=" ")
-# func("one", "onetwonine")
 
-func2()
+# Задача 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].
+# Сдвиньте все элементы списка на 2 позиции вправо.
+# 3 -> [2, 3, -3, -2, -1, 0, 1]
 
+def func3(value: int):
+    listArray = []
+    for elements in range(-value, value+1):
+        listArray.append(elements)
+    listArray = listArray[-2:]
+    for el in range(-value, value-1):
+        listArray.append(el)
+    # listArray[0] listArray[1] = listArray[-2:]
 
+    print(f"{value} -> {listArray}")
 
 
