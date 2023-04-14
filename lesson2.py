@@ -40,7 +40,6 @@ def func3(value: int):
     listArray = listArray[-2:]
     for el in range(-value, value-1):
         listArray.append(el)
-
     print(f"{value} -> {listArray}")
 
 
